@@ -1,0 +1,9 @@
+cd eclinic_api
+docker-compose build
+docker-compose up
+docker-compose run api python3 manage.py createsuperuser
+cd ..
+
+cd eclinic_admin
+docker-compose build
+docker-compose up
