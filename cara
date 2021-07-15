@@ -7,3 +7,9 @@ cd ..
 cd eclinic_admin
 docker-compose build
 docker-compose up
+
+*note= network_mode: bridge     >>  berfungsi biar dia 1 network yaitu bridge
+cara cek nya 
+docker inspect eclinic-api | grep IPAddress
+docker inspect eclinic-admin | grep IPAddress
+docker inspect mysql-eclinic | grep IPAddress
