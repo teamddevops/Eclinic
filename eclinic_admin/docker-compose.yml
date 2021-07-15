@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  admin:
+    build:
+      context: .
+      dockerfile: Dockerfile-admin
+    container_name: eclinic-admin
+    command: "npm run dev"
+    network_mode: bridge
+    ports:
+      - 8080:8080
+

@@ -1,0 +1,11 @@
+ admin:
+    build:
+      context: .
+      dockerfile: Dockerfile-admin
+    container_name: eclinic-admin
+    command: bash -c "npm run dev"
+ #   networks:
+ #     - eclinic
+    ports:
+      - 8080:8080
+
